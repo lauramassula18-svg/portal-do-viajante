@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #02050b;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+/* MENU */
+
+.menu {
+    width: 100%;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 18px;
+    padding: 28px 60px;
+    margin-bottom: 22px;
+
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(4px);
+}
+
+.menu nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 650px;
+
+    border-radius: 22px;
+    overflow: hidden;
+
+    background-image: url('https://escoladainteligencia.com.br/wp-content/uploads/2016/09/familia.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ESCURECIMENTO */
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.28);
+}
+
+/* CONTEÚDO */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 6rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* LINHA AZUL */
+
+.linha {
+    margin-top: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.linha span {
+    width: 120px;
+    height: 3px;
+
+    background: white;
+}
+
+.ponto {
+    width: 18px;
+    height: 18px;
+
+    background: white;
+
+    border-radius: 50%;
+}
+
+/* TEXTO ABAIXO */
+
+.sobre {
+    width: 100%;
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.sobre h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+
+    line-height: 1.8;
+
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1200px) {
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .sobre h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .menu {
+        padding: 22px;
+    }
+
+    .menu nav {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .linha span {
+        width: 70px;
+    }
+
+    .sobre h2 {
+        font-size: 1.5rem;
+    }
+}

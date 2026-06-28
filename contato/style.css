@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #02050b;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+/* MENU */
+
+.menu {
+    width: 100%;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 18px;
+    padding: 28px 60px;
+    margin-bottom: 22px;
+
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(4px);
+}
+
+.menu nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+/* TÍTULO CONTATO */
+
+.titulo-contato {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.titulo-contato h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* TEXTO */
+
+.sobre {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.8;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* REDES SOCIAIS */
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.card-social {
+    width: 260px;
+    height: 120px;
+
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.card-social:hover {
+    transform: translateY(-8px);
+    border-color: white;
+    background: rgba(255,255,255,0.08);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1200px) {
+    .sobre h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .menu {
+        padding: 22px;
+    }
+
+    .menu nav {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .sobre h2 {
+        font-size: 1.5rem;
+    }
+
+    .titulo-contato h1 {
+        font-size: 2.8rem;
+    }
+
+    .redes-sociais {
+        gap: 20px;
+    }
+
+    .card-social {
+        width: 220px;
+        height: 100px;
+        font-size: 1.3rem;
+    }
+}
